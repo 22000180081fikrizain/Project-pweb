@@ -1,0 +1,93 @@
+.images{
+	display: flex;
+	width: 100%;
+	transition: 2s;
+
+}
+.images img{
+	width: 100%;
+}
+.wrapper{
+	width: 1000px;
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+#slide-1:target ~ .images {
+	margin-left: 0px;
+}
+#slide-2:target ~ .images {
+	margin-left: -1000px;
+}
+#slide-3:target ~ .images {
+	margin-left: -2000px;
+}
+#slide-4:target ~ .images {
+	margin-left: -2990px;
+}
+#slide-5:target ~ .images {
+	margin-left: -4000px;
+}
+.navigation a{
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	font-size: 0px;
+	border-radius: 50%;
+}
+.navigation a:hover{
+	background-color: black;
+	transition: 1s;
+}
+.navigation{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin-top: -50px;
+
+	
+}
+@media screen and (max-width: 800px){
+	.wrapper{
+		width: 90%;
+	}
+}
+.container {
+	overflow-y: auto;
+	height: 1200px; 
+  }
+  
+.footer{
+	
+	margin-bottom: -100px;
+}
+
+footer h1{
+
+	color: red;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: inherit;
+	
+}
+p{
+	color: red;
+	text-align: left;
+	font-size: 20px;
+	font-style: inherit;
+}
+li{
+	color: red;
+	font-size: 23px;
+}
+
+
+body{
+	background-color: black;
+}
